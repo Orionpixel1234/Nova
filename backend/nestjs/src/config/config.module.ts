@@ -7,6 +7,7 @@ import { ConfigModule as NestConfigModule } from '@nestjs/config';
     isGlobal: true,
     envFilePath: ".env"
   })],
-  providers: [ConfigService]
+  providers: [ConfigService],
+  exports: [ConfigService]
 })
 export class ConfigModule {}
